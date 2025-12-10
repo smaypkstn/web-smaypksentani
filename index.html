@@ -1,1 +1,112 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SMA YPK Sentani — Website Resmi</title>
+  <meta name="description" content="Website resmi SMA YPK Sentani — profil, guru, kegiatan, kontak." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="img/placeholder.svg" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">SMA YPK Sentani</a>
+      <nav class="nav" id="nav">
+        <a href="index.html">Beranda</a>
+        <a href="teachers.html">Guru</a>
+        <a href="#about">Tentang</a>
+        <a href="#contact">Kontak</a>
+      </nav>
+      <button id="menuBtn" class="menu-btn" aria-expanded="false">☰</button>
+    </div>
+  </header>
 
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <h1>Selamat datang di SMA YPK Sentani</h1>
+        <p class="lead">Sekolah unggul berwawasan lingkungan dengan dasar iman Kristen.</p>
+        <a class="btn" href="teachers.html">Lihat Daftar Guru</a>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>Tentang Sekolah</h2>
+        <p><strong>Alamat:</strong> Jalan Bisteur Pos Sentani, Jayapura, Papua 99352.</p>
+        <h3>Visi</h3>
+        <p>Menjadikan Sekolah yang Unggul dan berprestasi serta berwawasan lingkungan dengan dasar iman Kristen.</p>
+
+        <h3>Misi</h3>
+        <ol>
+          <li>Membentuk kepribadian yang utuh serta memiliki integritas Kristen.</li>
+          <li>Mengembangkan program pembelajaran dan bimbingan yang aktif, inovatif, kreatif, efektif, efisien dan menyenangkan demi meningkatkan pencapaian kompetensi peserta didik.</li>
+          <li>Mengembangkan budaya peduli lingkungan hidup, berprestasi dan kemandirian serta mematuhi tata tertib sekolah bagi warga sekolah.</li>
+          <li>Meningkatkan partisipasi warga sekolah dan masyarakat dalam peningkatan mutu pendidikan.</li>
+          <li>Menciptakan sekolah yang berciri khas melalui muatan lokal dan integrasi pendidikan budaya karakter bangsa dan literasi ke dalam mata pelajaran.</li>
+          <li>Pembiasaan peduli terhadap perlindungan dan pelestarian lingkungan hidup.</li>
+          <li>Mengurangi pencemaran lingkungan melalui daur ulang sampah.</li>
+        </ol>
+
+      </div>
+    </section>
+
+    <section id="teachers-preview" class="section alt">
+      <div class="container">
+        <h2>Profil Guru (contoh)</h2>
+        <p class="lead">Beberapa tenaga pengajar kami — lihat daftar lengkap.</p>
+        <div class="grid-3" id="teachersPreview"></div>
+        <p><a href="teachers.html" class="btn">Lihat Semua Guru</a></p>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Kontak Sekolah</h2>
+        <p><strong>Alamat:</strong> Jalan Bisteur Pos Sentani, Jayapura, Papua 99352</p>
+        <p><strong>Email:</strong> info@smaypksentani.sch.id (contoh)</p>
+        <p><strong>Telepon:</strong> (0967) 123-456 (contoh)</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> SMA YPK Sentani</p>
+    </div>
+  </footer>
+
+  <script src="teachers.js"></script>
+  <script>
+    // simple header/menu and year
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('year').textContent = new Date().getFullYear();
+      const btn = document.getElementById('menuBtn');
+      const nav = document.getElementById('nav');
+      btn.addEventListener('click', () => {
+        const shown = nav.style.display === 'flex';
+        nav.style.display = shown ? '' : 'flex';
+      });
+
+      // load preview (first 3 teachers)
+      fetch('teachers.json').then(r=>r.json()).then(data=>{
+        const preview = document.getElementById('teachersPreview');
+        preview.innerHTML = '';
+        (data.slice(0,3)).forEach(t=>{
+          const card = document.createElement('div');
+          card.innerHTML = `
+            <article class="teacher-card">
+              <a href="profile.html?id=${encodeURIComponent(t.id)}" style="color:inherit;text-decoration:none;">
+                <img src="${t.photo}" alt="${t.name}" />
+                <h3>${t.name}</h3>
+                <p>${t.role} — ${t.subject}</p>
+              </a>
+            </article>`;
+          preview.appendChild(card);
+        });
+      }).catch(()=>{ /* ignore if not ready */ });
+    });
+  </script>
+</body>
+</html>
