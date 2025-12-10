@@ -1,22 +1,142 @@
 [
-  {"id":"fransiska-y-hokoyoku","name":"Fransiska Y. Hokoyoku","role":"Kepala Sekolah","subject":"Kepala Sekolah","photo":"img/placeholder.svg"},
-  {"id":"agustina-martencis-werinussa","name":"Agustina Martencis Werinussa","role":"Guru","subject":"Kimia","photo":"img/placeholder.svg"},
-  {"id":"estefina-sineri","name":"Estefina Sineri","role":"Guru","subject":"Sejarah","photo":"img/placeholder.svg"},
-  {"id":"hendrik-h-maniagasi","name":"Hendrik H. Maniagasi","role":"Guru","subject":"Geografi","photo":"img/placeholder.svg"},
-  {"id":"herlina-nonce-anakotta","name":"Herlina Nonce Anakotta","role":"Guru","subject":"Agama Kristen","photo":"img/placeholder.svg"},
-  {"id":"irianti","name":"Irianti","role":"Guru","subject":"Prakarya dan Kewirausahaan","photo":"img/placeholder.svg"},
-  {"id":"martha-tampang","name":"Martha Tampang","role":"Guru","subject":"Kimia","photo":"img/placeholder.svg"},
-  {"id":"mega-cicik-resdiana","name":"Mega Cicik Resdiana","role":"Guru","subject":"Fisika","photo":"img/placeholder.svg"},
-  {"id":"muhamad-syamsul-bahri","name":"Muhamad Syamsul Bahri","role":"Guru","subject":"Penjasorkes","photo":"img/placeholder.svg"},
-  {"id":"renolxius-mayor","name":"Renolxius Mayor","role":"Guru","subject":"Seni Budaya","photo":"img/placeholder.svg"},
-  {"id":"rita-istiani","name":"Rita Istiani","role":"Guru","subject":"Matematika","photo":"img/placeholder.svg"},
-  {"id":"roy-nelson-richardo-rumbino","name":"Roy Nelson Richardo Rumbino","role":"Tenaga Kependidikan","subject":"Administrasi Sekolah","photo":"img/placeholder.svg"},
-  {"id":"ruben-pongmassangka","name":"Ruben Pongmassangka","role":"Tenaga Kependidikan","subject":"Administrasi Sekolah","photo":"img/placeholder.svg"},
-  {"id":"syan-yubel-kamarea","name":"Syan Yubel Kamarea","role":"Guru","subject":"Sejarah","photo":"img/placeholder.svg"},
-  {"id":"tineke-jallu-sokoy","name":"Tineke Jallu Sokoy","role":"Guru","subject":"Bahasa Inggris","photo":"img/placeholder.svg"},
-  {"id":"wanda-adah-rumbino","name":"Wanda Adah Rumbino","role":"Guru","subject":"Bahasa Indonesia","photo":"img/placeholder.svg"},
-  {"id":"yakobus-aprianus-sidi","name":"Yakobus Aprianus Sidi","role":"Guru","subject":"Geografi","photo":"img/placeholder.svg"},
-  {"id":"yoppy-yolanda-suebu","name":"Yoppy Yolanda Suebu","role":"Guru","subject":"Prakarya dan Kewirausahaan","photo":"img/placeholder.svg"},
-  {"id":"yosua-edison-rumbekwan","name":"Yosua Edison Rumbekwan","role":"Guru","subject":"Sosiologi","photo":"img/placeholder.svg"},
-  {"id":"yuni-nadia-asyerem","name":"Yuni Nadia Asyerem","role":"Guru","subject":"Bahasa Indonesia","photo":"img/placeholder.svg"}
+  {
+    "id": "fransiska-y-hokoyoku",
+    "name": "Fransiska Y. Hokoyoku",
+    "role": "Kepala Sekolah",
+    "subject": "Kepala Sekolah",
+    "photo": "img/placeholder.svg"
+  },
+  {
+    "id": "agustina-martencis-werinussa",
+    "name": "Agustina Martencis Werinussa",
+    "role": "Guru",
+    "subject": "Kimia",
+    "photo": "img/placeholder.svg"
+  },
+  {
+    "id": "estefina-sineri",
+    "name": "Estefina Sineri",
+    "role": "Guru",
+    "subject": "Sejarah",
+    "photo": "img/placeholder.svg"
+  },
+  {
+    "id": "hendrik-h-maniagasi",
+    "name": "Hendrik H. Maniagasi",
+    "role": "Guru",
+    "subject": "Geografi",
+    "photo": "img/placeholder.svg"
+  },
+  {
+    "id": "herlina-nonce-anakotta",
+    "name": "Herlina Nonce Anakotta",
+    "role": "Guru",
+    "subject": "Agama Kristen",
+    "photo": "img/placeholder.svg"
+  },
+  {
+    "id": "irianti",
+    "name": "Irianti",
+    "role": "Guru",
+    "subject": "Prakarya dan Kewirausahaan",
+    "photo": "img/placeholder.svg"
+  },
+  {
+    "id": "martha-tampang",
+    "name": "Martha Tampang",
+    "role": "Guru",
+    "subject": "Kimia",
+    "photo": "img/placeholder.svg"
+  },
+  {
+    "id": "mega-cicik-resdiana",
+    "name": "Mega Cicik Resdiana",
+    "role": "Guru",
+    "subject": "Fisika",
+    "photo": "img/placeholder.svg"
+  },
+  {
+    "id": "muhamad-syamsul-bahri",
+    "name": "Muhamad Syamsul Bahri",
+    "role": "Guru",
+    "subject": "Penjasorkes",
+    "photo": "img/placeholder.svg"
+  },
+  {
+    "id": "renolxius-mayor",
+    "name": "Renolxius Mayor",
+    "role": "Guru",
+    "subject": "Seni Budaya",
+    "photo": "img/placeholder.svg"
+  },
+  {
+    "id": "rita-istiani",
+    "name": "Rita Istiani",
+    "role": "Guru",
+    "subject": "Matematika",
+    "photo": "img/placeholder.svg"
+  },
+  {
+    "id": "roy-nelson-richardo-rumbino",
+    "name": "Roy Nelson Richardo Rumbino",
+    "role": "Tenaga Kependidikan",
+    "subject": "Administrasi Sekolah",
+    "photo": "img/placeholder.svg"
+  },
+  {
+    "id": "ruben-pongmassangka",
+    "name": "Ruben Pongmassangka",
+    "role": "Tenaga Kependidikan",
+    "subject": "Administrasi Sekolah",
+    "photo": "img/placeholder.svg"
+  },
+  {
+    "id": "syan-yubel-kamarea",
+    "name": "Syan Yubel Kamarea",
+    "role": "Guru",
+    "subject": "Sejarah",
+    "photo": "img/placeholder.svg"
+  },
+  {
+    "id": "tineke-jallu-sokoy",
+    "name": "Tineke Jallu Sokoy",
+    "role": "Guru",
+    "subject": "Bahasa Inggris",
+    "photo": "img/placeholder.svg"
+  },
+  {
+    "id": "wanda-adah-rumbino",
+    "name": "Wanda Adah Rumbino",
+    "role": "Guru",
+    "subject": "Bahasa Indonesia",
+    "photo": "img/placeholder.svg"
+  },
+  {
+    "id": "yakobus-aprianus-sidi",
+    "name": "Yakobus Aprianus Sidi",
+    "role": "Guru",
+    "subject": "Geografi",
+    "photo": "img/placeholder.svg"
+  },
+  {
+    "id": "yoppy-yolanda-suebu",
+    "name": "Yoppy Yolanda Suebu",
+    "role": "Guru",
+    "subject": "Prakarya dan Kewirausahaan",
+    "photo": "img/placeholder.svg"
+  },
+  {
+    "id": "yosua-edison-rumbekwan",
+    "name": "Yosua Edison Rumbekwan",
+    "role": "Guru",
+    "subject": "Sosiologi",
+    "photo": "img/placeholder.svg"
+  },
+  {
+    "id": "yuni-nadia-asyerem",
+    "name": "Yuni Nadia Asyerem",
+    "role": "Guru",
+    "subject": "Bahasa Indonesia",
+    "photo": "img/placeholder.svg"
+  }
 ]
